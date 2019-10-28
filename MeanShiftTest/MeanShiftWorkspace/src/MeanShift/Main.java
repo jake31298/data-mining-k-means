@@ -1,6 +1,9 @@
 package MeanShift;
 
 import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 import java.util.Vector;
 import java.util.Random;
 
@@ -8,14 +11,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		// MeanShift calls start ===============================================================================================================================
-		int n = 10;
+		int n = 500;
 		int Q = 0;
 		float[][] a1 = new float[n][6];
 		Random rand = new Random();
-		for(int i = 0; i < 10; i++)
+	//	JFrame frame = new JFrame("Graph");
+	//	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	//	Plot plot = new Plot();
+	//	Point point = new Point();
+	//	frame.add(plot);
+	//	frame.add(point);
+	//	frame.setSize(500, 500);
+	//	frame.setVisible(true);
+		
+		for(int i = 0; i < n; i++)
 		{
 			//(int i, float x, float y, float q, float a1[][])
-			MeanShift.Add(i, rand.nextInt(50), rand.nextInt(50), 0, a1);
 			MeanShift.Add(i, rand.nextInt(50), rand.nextInt(50), 0, a1);
 		}
 				//float[][]a1 = new float[n][5];
@@ -66,8 +77,11 @@ public class Main {
 				stop[0] = 0; // initialize stop to 0
 				
 				Scanner reader = new Scanner(System.in);  // Reading from System.in
+				Plot.Export(a1);
+				Plot.Import();
 				System.out.println("Input the size of the cluster's window(int) below.");
 				System.out.println("Recommended size is between 5-20");
+				
 				int windowSize = reader.nextInt(); // Scans the next token of the input as an int.
 				
 				
