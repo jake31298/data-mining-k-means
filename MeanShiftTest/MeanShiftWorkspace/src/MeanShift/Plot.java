@@ -112,16 +112,19 @@ public class Plot extends Application{
     	//}
     //*/
 	@Override
-	public void start(Stage stage) {
-       Plot(stage, arr);
+	public void start(Stage stage) 
+	{
+       Plot(stage);
     }
- 
-    public static void main(String[] args) {
+
+	public static void main(String[] args) 
+    {
     	//plot(Stage stage
         launch(args);
     }
     
-    public void Plot(Stage stage, float [][] arr)
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public void Plot(Stage stage)
     {
     	stage.setTitle("Scatter Chart Sample");
         final NumberAxis xAxis = new NumberAxis(0, 10, 1);
@@ -132,7 +135,7 @@ public class Plot extends Application{
         yAxis.setLabel("Returns to date");
         sc.setTitle("Investment Overview");
        
-        XYChart.Series series1 = new XYChart.Series();
+		XYChart.Series series1 = new XYChart.Series();
         series1.setName("Equities");
         series1.getData().add(new XYChart.Data(4.2, 193.2));
         series1.getData().add(new XYChart.Data(2.8, 33.6));

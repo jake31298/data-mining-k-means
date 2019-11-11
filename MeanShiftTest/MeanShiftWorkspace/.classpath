@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/jbcl.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/jdom.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/joda-time-1.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/jxl.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/RelativeLayout.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/xercesImpl-2.9.1.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/xmlbeans-2.4.0.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/poi-3.10-FINAL-20140208.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/poi-ooxml-3.10-FINAL-20140208.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/stax-api-1.0.1.jar"/>
-	<classpathentry kind="lib" path="D:/C#/MeanShift/Libraries/XML File Reader/xmlbeans-2.3.0.jar"/>
-	<classpathentry kind="lib" path="D:/JavaFX/lib/src.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX2"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/XML File Reader/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.base.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.controls.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.fxml.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.graphics.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.media.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.swing.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx.web.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="D:/github stuff/data-mining-k-means/MeanShiftTest/MeanShiftWorkspace/Libraries/javafx-sdk-11.0.2/lib/src.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

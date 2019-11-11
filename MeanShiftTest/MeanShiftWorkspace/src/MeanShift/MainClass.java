@@ -79,7 +79,7 @@ public class MainClass {
 				Scanner reader = new Scanner(System.in);  // Reading from System.in
 		//		Plot.Export(a1);
 		//		Plot.Import();
-				//Plot.Plot()
+				Plot.Plot(null, problemPoints);
 				System.out.println("Input the size of the cluster's window(int) below.");
 				System.out.println("Recommended size is between 5-20");
 				
