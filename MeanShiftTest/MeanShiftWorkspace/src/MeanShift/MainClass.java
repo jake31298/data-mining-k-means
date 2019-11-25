@@ -6,6 +6,12 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Vector;
 import java.util.Random;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.ScatterChart;
+import javafx.scene.chart.XYChart;
+import javafx.stage.Stage;
 
 public class MainClass {
 
@@ -79,7 +85,8 @@ public class MainClass {
 				Scanner reader = new Scanner(System.in);  // Reading from System.in
 		//		Plot.Export(a1);
 		//		Plot.Import();
-				Plot.Plot(null, problemPoints);
+				Stage stage = new Stage();
+				//Plot.Plot();
 				System.out.println("Input the size of the cluster's window(int) below.");
 				System.out.println("Recommended size is between 5-20");
 				
