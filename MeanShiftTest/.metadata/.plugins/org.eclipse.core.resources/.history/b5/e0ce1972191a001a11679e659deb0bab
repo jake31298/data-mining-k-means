@@ -1,0 +1,112 @@
+package MeanShift;
+import java.io.*;
+import java.util.*;
+import java.util.IllegalFormatException;
+
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.ScatterChart;
+import javafx.scene.chart.XYChart;
+import javafx.stage.Stage;
+
+
+
+public class Plot extends Application{
+	//static float[][] a1 = new float[5000][6];
+	static ArrayList<ArrayList<Float> > vector = new ArrayList<ArrayList<Float> >();
+	
+	public static void getArray(float arr[][])
+	{
+		for(int i = 0; i < arr.length; i++)
+		{
+			vector.get(i).add(0, arr[i][0]);
+			vector.get(i).add(1, arr[i][1]);
+		}
+		
+	}
+	public static void starting(Stage stage) {
+       Plot(stage);
+    }
+	
+	public static void startCall()
+	{
+		Stage stage = new Stage();
+		starting(stage);
+	}
+ 
+	
+    public static void main(String[] args) {
+    	//plot(Stage stage
+    	System.out.println("In main");
+        launch();
+    }
+    
+    public static void t()
+    {
+    	launch();
+    }
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public static void Plot(Stage stage)
+    {
+    	stage.setTitle("Scatter Chart Sample");
+        final NumberAxis xAxis = new NumberAxis(0, 50, 1);
+        final NumberAxis yAxis = new NumberAxis(0, 50, 10);        
+        final ScatterChart<Number,Number> sc = new
+            ScatterChart<Number,Number>(xAxis,yAxis);
+        xAxis.setLabel("Age (years)");                
+        yAxis.setLabel("Returns to date");
+        sc.setTitle("Investment Overview");
+       
+        XYChart.Series series1 = new XYChart.Series();
+        series1.setName("Equities");
+      //  series1.getData().add(new XYChart.Data(4.2, 193.2));
+        for(int i = 0; i < vector.size(); i++)
+        {
+        	series1.getData().add(new XYChart.Data(vector.get(i).get(0), vector.get(i).get(1)));
+        }
+        
+        
+        XYChart.Series series2 = new XYChart.Series();
+        series2.setName("Mutual funds");
+        series2.getData().add(new XYChart.Data(20, 20));
+        
+        XYChart.Series series3 = new XYChart.Series();
+        series3.setName("Jake's shit");
+        series3.getData().add(new XYChart.Data(42.42, 42.42));
+        
+ 
+       // sc.getData().addAll(series1, series2);
+        sc.getData().addAll(series1, series2, series3);
+        Scene scene  = new Scene(sc, 500, 400);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    
+	@Override
+	public void start(Stage stage) throws Exception {
+		//startCall();
+		System.out.println("In start");
+		Plot(stage);
+		
+	}
+ 
+   
+    
+}
+	
+  

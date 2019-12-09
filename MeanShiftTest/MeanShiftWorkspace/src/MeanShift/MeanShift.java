@@ -10,7 +10,6 @@ public class MeanShift {
 	{
 	}
 	
-	
 	public static void Add(int i, float x, float y, float q, float a1[][])
 // Column guide for array a1/arr || Column: 1:x  2:y    3:was in current cluster window(0/1)    4:was ever in cluster?(0/1)   5:cluster number	6: Weight of point												
 	{

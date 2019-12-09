@@ -85,8 +85,8 @@ public class MainClass {
 				Scanner reader = new Scanner(System.in);  // Reading from System.in
 		//		Plot.Export(a1);
 		//		Plot.Import();
-				Stage stage = new Stage();
-				//Plot.Plot();
+				//Stage stage = new Stage();
+				
 				System.out.println("Input the size of the cluster's window(int) below.");
 				System.out.println("Recommended size is between 5-20");
 				
@@ -115,7 +115,7 @@ public class MainClass {
 						}		
 					}
 					
-					
+					 
 				int numofClusters;	
 
 				
@@ -169,7 +169,10 @@ public class MainClass {
 				}
 				
 				MeanShift.CentroidPrint(finalCentroids, n);
-				MeanShift.Print(a1, windowSize);
+				
+				Plot.getArray(a1, finalCentroids);
+				Application.launch(Plot.class, args);
+				//MeanShift.Print(a1, windowSize);
 				
 				
 					 
