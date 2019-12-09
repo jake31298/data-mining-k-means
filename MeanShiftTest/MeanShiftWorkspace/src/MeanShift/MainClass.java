@@ -17,7 +17,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		// MeanShift calls start ===============================================================================================================================
-		int n = 5000;
+		int n = 3000;
 		int Q = 0;
 		float[][] a1 = new float[n][6];
 		Random rand = new Random();
@@ -30,13 +30,16 @@ public class MainClass {
 	//	frame.setSize(500, 500);
 	//	frame.setVisible(true);
 		
+		/*
 		for(int i = 0; i < n; i++)
 		{
 			//(int i, float x, float y, float q, float a1[][])
 			MeanShift.Add(i, rand.nextInt(50), rand.nextInt(50), 0, a1);
 		}
+		*/
 				//float[][]a1 = new float[n][5];
-				
+			String filepath = "/Data/A1Data.xlsx";
+				Plot.readExcel(filepath, a1);
 				
 				float[][]newClusterXY = new float[1][2];
 				

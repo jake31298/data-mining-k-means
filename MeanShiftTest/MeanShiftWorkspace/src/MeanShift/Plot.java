@@ -29,6 +29,73 @@ public class Plot extends Application{
 	static ArrayList<ArrayList<Float> > centList = new ArrayList<ArrayList<Float> >();
 	static ArrayList<ArrayList<Float> > arrList = new ArrayList<ArrayList<Float> >();
 	
+	
+	public static void readExcel(String filename, float [][] a1)
+	{
+		
+		//Open the requested file
+		XSSFWorkbook workbook = new XSSFWorkbook();    
+		FileInputStream fis;
+		XSSFSheet sheet = null;
+		XSSFRow curRow;
+		int rowCounter = 0; //initial the row counter
+
+		try 
+		{
+			fis = new FileInputStream(filename);
+			workbook = new XSSFWorkbook(fis);
+			sheet = workbook.getSheetAt(0);
+			curRow = sheet.getRow(rowCounter); // the 2nd row is the problem data
+		}
+		catch (Exception e) {
+			System.out.println("readDataFromExcelFile - "+filename+" File is not present");
+			
+		}
+		
+		
+		float x = 0, //x coordinate
+				y = 0; //y coordinate
+		int i = 0; //customer number
+				
+		int runTimes = a1.length;
+
+		
+		try
+		{
+
+			for (int k = 0; k < runTimes; k++) {
+				//index = 0;
+				//temp = "";
+				curRow = sheet.getRow(k);
+				try 
+				{ // read the current row
+					
+					x = (int)curRow.getCell(0).getNumericCellValue();
+					y = (int)curRow.getCell(1).getNumericCellValue();
+				
+				
+					
+				}
+				catch (Exception e) {
+					System.out.println("Line could not be read in line 474");
+					
+				}
+	
+				
+				//MeanShift.Add(i, x, y, q, a1); //Adding each point into a1
+				
+				MeanShift.Add(i, x, y, 0, a1);
+				
+				
+			}
+		
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+				System.out.println("Reading the line");
+			}
+	}
+	
 	public static void getArray(float arr[][], float[][] centroids)
 	{
 		for(int i = 0; i < arr.length; i++)
