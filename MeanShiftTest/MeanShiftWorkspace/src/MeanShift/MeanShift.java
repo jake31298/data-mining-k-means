@@ -5,7 +5,12 @@ import java.util.Arrays;
 import java.lang.Math;
 import java.util.Vector;
 public class MeanShift {
-		
+	/*
+	 * Code Created by Brayden Lloyd late 2018
+	 * 
+	 * Edited late 2019
+	 * Finished editing 12/10/19
+	 */
 	public static void main(String[] args) 
 	{
 	}

@@ -23,10 +23,7 @@ import javafx.scene.chart.ScatterChart;
 import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
 
-/*
- * Code Created by Brayden Lloyd and Jacob McMahon 
- * 12/10/19
- */
+
 
 public class Plot extends Application{
 	static ArrayList<ArrayList<Float> > centList = new ArrayList<ArrayList<Float> >();

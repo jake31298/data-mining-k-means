@@ -12,10 +12,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.ScatterChart;
 import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
-/*
- * Code Created by Brayden Lloyd and Jacob McMahon 
- * 12/10/19
- */
+
 public class MainClass {
 	
 	static long startTime;

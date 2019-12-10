@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MeanShift.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.systemInPlaceEditor&quot; name=&quot;A1Data.xlsx&quot; tooltip=&quot;MeanShiftWorkspace/Data/A1Data.xlsx&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MeanShiftWorkspace/Data/A1Data.xlsx&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;LauncherImpl.class&quot; tooltip=&quot;com.sun.javafx.application.LauncherImpl&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/D:\/JavaFXSDK\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar&amp;lt;com.sun.javafx.application(LauncherImpl.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;WinApplication.class&quot; tooltip=&quot;com.sun.glass.ui.win.WinApplication&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/D:\/JavaFXSDK\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar&amp;lt;com.sun.glass.ui.win(WinApplication.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Plot.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/Plot.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MeanShiftWorkspace/src/MeanShift/Plot.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;ArrayList.class&quot; tooltip=&quot;java.util.ArrayList&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/C:\/Program Files\/Java\/jre1.8.0_231\/lib\/rt.jar&amp;lt;java.util(ArrayList.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;Window.class&quot; tooltip=&quot;javafx.stage.Window&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/D:\/JavaFXSDK\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar&amp;lt;javafx.stage(Window.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;Stage.class&quot; tooltip=&quot;javafx.stage.Stage&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/D:\/JavaFXSDK\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar&amp;lt;javafx.stage(Stage.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Application.class&quot; tooltip=&quot;javafx.application.Application&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/C:\/Program Files\/Java\/jre1.8.0_231\/lib\/ext\/jfxrt.jar&amp;lt;javafx.application(Application.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Point.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/Point.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MeanShiftWorkspace/src/MeanShift/Point.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Main.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/Main.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MeanShiftWorkspace/src/MeanShift/Main.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;ClassLoader.class&quot; tooltip=&quot;java.lang.ClassLoader&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/D:\/JavaFX\/lib\/jrt-fs.jar`java.base&amp;lt;java.lang(ClassLoader.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Container.class&quot; tooltip=&quot;java.awt.Container&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=MeanShiftWorkspace/C:\/Program Files\/Java\/jre1.8.0_221\/lib\/rt.jar&amp;lt;java.awt(Container.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;.project&quot; tooltip=&quot;C:\Users\FrostPC\Desktop\MeanShiftTest\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/FrostPC/Desktop/MeanShiftTest/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_jrENQQ82EeqPK6_yGp8Hmg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_jrENQg82EeqPK6_yGp8Hmg" label="%trimmedwindow.label.eclipseSDK" x="-2" y="3" width="1338" height="970">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_jrENQQ82EeqPK6_yGp8Hmg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_jrENQg82EeqPK6_yGp8Hmg" label="%trimmedwindow.label.eclipseSDK" x="-2" y="3" width="1671" height="970">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -229,8 +229,8 @@
                 <tags>categoryTag:Java</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_jrENaQ82EeqPK6_yGp8Hmg" containerData="7500" selectedElement="_jrENdA82EeqPK6_yGp8Hmg">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_jrENag82EeqPK6_yGp8Hmg" containerData="4427" selectedElement="_jrENaw82EeqPK6_yGp8Hmg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_jrENaQ82EeqPK6_yGp8Hmg" containerData="7500" selectedElement="_jrENag82EeqPK6_yGp8Hmg">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_jrENag82EeqPK6_yGp8Hmg" containerData="8902" selectedElement="_jrENaw82EeqPK6_yGp8Hmg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_jrENaw82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.editorss" containerData="6500" ref="_jrEOuQ82EeqPK6_yGp8Hmg"/>
                 <children xsi:type="basic:PartStack" xmi:id="_jrENbA82EeqPK6_yGp8Hmg" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" containerData="3500" selectedElement="_jrENbQ82EeqPK6_yGp8Hmg">
                   <tags>org.eclipse.e4.secondaryNavigationStack</tags>
@@ -264,9 +264,8 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_jrENdA82EeqPK6_yGp8Hmg" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="5573" selectedElement="_jrENdQ82EeqPK6_yGp8Hmg">
+              <children xsi:type="basic:PartStack" xmi:id="_jrENdA82EeqPK6_yGp8Hmg" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="1098" selectedElement="_jrENdQ82EeqPK6_yGp8Hmg">
                 <tags>Java</tags>
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_jrENdQ82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.console.ConsoleView" ref="_jrE09g82EeqPK6_yGp8Hmg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -348,26 +347,29 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_jrEOuQ82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.editorss" selectedElement="_jrEOug82EeqPK6_yGp8Hmg">
-      <children xsi:type="basic:PartStack" xmi:id="_jrEOug82EeqPK6_yGp8Hmg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_jrE0Uw82EeqPK6_yGp8Hmg">
+      <children xsi:type="basic:PartStack" xmi:id="_jrEOug82EeqPK6_yGp8Hmg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_jrE0Vw82EeqPK6_yGp8Hmg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_jrEOuw82EeqPK6_yGp8Hmg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MeanShift.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MeanShift.java&quot; partName=&quot;MeanShift.java&quot; title=&quot;MeanShift.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;22607&quot; selectionTopPixel=&quot;9105&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MeanShift.java&quot; partName=&quot;MeanShift.java&quot; title=&quot;MeanShift.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/MeanShift.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;221&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_jrE0Uw82EeqPK6_yGp8Hmg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Plot.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Plot.java&quot; partName=&quot;Plot.java&quot; title=&quot;Plot.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/Plot.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/Plot.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6168&quot; selectionTopPixel=&quot;2603&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Plot.java&quot; partName=&quot;Plot.java&quot; title=&quot;Plot.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/Plot.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/Plot.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;890&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_jrE0Vw82EeqPK6_yGp8Hmg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MainClass.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MainClass.java&quot; partName=&quot;MainClass.java&quot; title=&quot;MainClass.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/MainClass.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/MainClass.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7056&quot; selectionTopPixel=&quot;1616&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MainClass.java&quot; partName=&quot;MainClass.java&quot; title=&quot;MainClass.java&quot; tooltip=&quot;MeanShiftWorkspace/src/MeanShift/MainClass.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MeanShiftWorkspace/src/MeanShift/MainClass.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;455&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -449,8 +451,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_jrE09w82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -620,7 +620,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jrE1wA82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dMhwEBsJEeq5o4mEgOmT8A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_jrGq2g82EeqPK6_yGp8Hmg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__DuxsBsiEequq4zi7O05Ug" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_jrGq2g82EeqPK6_yGp8Hmg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jrE1zg82EeqPK6_yGp8Hmg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -651,7 +651,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jrE2JA82EeqPK6_yGp8Hmg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dMkzYBsJEeq5o4mEgOmT8A" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_jrGqTA82EeqPK6_yGp8Hmg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__Dwm4BsiEequq4zi7O05Ug" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_jrGqTA82EeqPK6_yGp8Hmg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jrE2MA82EeqPK6_yGp8Hmg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
