@@ -104,16 +104,16 @@ public class Plot extends Application{
 			arrList.get(i).add(0, arr[i][0]);
 			arrList.get(i).add(1, arr[i][1]);
 			arrList.get(i).add(2, arr[i][4]);
-//			System.out.println("row " + i + " has a cluster number of " + arrList.get(i).get(2));
+			System.out.println("row " + i + " has a cluster number of " + arrList.get(i).get(2));
 		}
 		
 		for(int i = 0; i < centroids.length; i++)
 		{
 			
 			centList.add(new ArrayList<Float>());
-//			System.out.println("centList now has a size of" + centList.size());
+			System.out.println("centList now has a size of" + centList.size());
 			centList.get(i).add(0, centroids[i][2]);
-//			System.out.println("Centroid number " + i + " has a number of " + centroids[i][2]);
+			System.out.println("Centroid number " + i + " has a number of " + centroids[i][2]);
 		}
 		
 	}
@@ -142,8 +142,8 @@ public class Plot extends Application{
 	public static void Plot(Stage stage)
     {
     	stage.setTitle("Scatter Chart Sample");
-        final NumberAxis xAxis = new NumberAxis(0, 100, 1);
-        final NumberAxis yAxis = new NumberAxis(0, 100, 10);        
+        final NumberAxis xAxis = new NumberAxis(0, 50, 1);
+        final NumberAxis yAxis = new NumberAxis(0, 50, 10);        
         final ScatterChart<Number,Number> sc = new
             ScatterChart<Number,Number>(xAxis,yAxis);
         //xAxis.setLabel("Age (years)");                
@@ -178,7 +178,7 @@ public class Plot extends Application{
         Scene scene  = new Scene(sc, 500, 400);
         
         Vector <XYChart.Series> vecClusters = new Vector<XYChart.Series>();
-//        System.out.println("centList size is " + centList.size());
+        System.out.println("centList size is " + centList.size());
         for(int i = 0; i < centList.size(); i++)
         {
         	tempNum = i + 1;
@@ -188,23 +188,16 @@ public class Plot extends Application{
         	a.setName(temp);
         	vecClusters.add(a);        	
         }
-//        System.out.println("centList size is now " + centList.size());
+        System.out.println("centList size is now " + centList.size());
         // ADD instances of vectors to a list, find out how to assign points to vectors
         
-//        System.out.println("arrList size is " + arrList.size());
+        System.out.println("arrList size is " + arrList.size());
         for(int i = 0; i < arrList.size(); i++)
         {
         	clusterNum = arrList.get(i).get(2);
-//        	System.out.println("The cluster list only has " + vecClusters.size() + " elements");
-//        	System.out.println("[index: " + i + "] clusterNum is " + clusterNum);
-        	if(clusterNum <= vecClusters.size())
-        	{
+        	System.out.println("The cluster list only has " + vecClusters.size() + " elements");
+        	System.out.println("[index: " + i + "] clusterNum is " + clusterNum);
         	vecClusters.get((int)clusterNum-1).getData().add(new XYChart.Data(arrList.get(i).get(0), arrList.get(i).get(1)));
-        	}
-        	else
-        	{
-//        		System.out.println("The point's cluster number(" + clusterNum + ") at index " + i + " in arrList for some reason is wrong. ");
-        	}
         }
         
         
@@ -222,14 +215,6 @@ public class Plot extends Application{
         //Scene scene  = new Scene(sc, 500, 400);
         stage.setScene(scene);
         stage.show();
-        
-        final long endTime = System.currentTimeMillis();
-        
-        final long startTime = MainClass.getStartTime();
-        
-        final long timeToCluster = endTime - startTime;
-        
-        System.out.println("Clustering took " + (double) timeToCluster/1000 + " seconds to cluster.");
     }
 
     

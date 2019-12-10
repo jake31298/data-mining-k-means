@@ -203,7 +203,7 @@ public class Plot extends Application{
         	}
         	else
         	{
-//        		System.out.println("The point's cluster number(" + clusterNum + ") at index " + i + " in arrList for some reason is wrong. ");
+        		System.out.println("The point's cluster number(" + clusterNum + ") at index " + i + " in arrList for some reason is wrong. ");
         	}
         }
         

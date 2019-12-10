@@ -204,7 +204,7 @@ public class MainClass {
 					}
 				}
 			//	MeanShift.Print(a1, windowSize);
-				MeanShift.CentroidPrint(finalCentroids, n);
+			//	MeanShift.CentroidPrint(finalCentroids, n);
 				
 				Plot.getArray(a1, finalCentroids);
 				Application.launch(Plot.class, args);

@@ -1,11 +1,11 @@
 INDEX VERSION 1.131+C:\Users\FrostPC\Desktop\MeanShiftTest\.metadata\.plugins\org.eclipse.jdt.core
-1942359185.index
+1800736843.index
 3227056335.index
 531533494.index
 1860485910.index
 202638269.index
-4079200576.index
 108469519.index
+4079200576.index
 144380394.index
 3672942303.index
 155530345.index
@@ -13,16 +13,16 @@ INDEX VERSION 1.131+C:\Users\FrostPC\Desktop\MeanShiftTest\.metadata\.plugins\or
 1401108579.index
 2478935416.index
 897659091.index
-3901949490.index
-1401678300.index
+2189209580.index
 1943575548.index
+1845031563.index
 1041807413.index
 2253133250.index
-2189209580.index
-1845031563.index
+3901949490.index
+1401678300.index
+2492909726.index
 4212195811.index
 2689285892.index
-2492909726.index
 1871885537.index
 1241298325.index
 1199859913.index
@@ -39,4 +39,4 @@ INDEX VERSION 1.131+C:\Users\FrostPC\Desktop\MeanShiftTest\.metadata\.plugins\or
 4011917464.index
 2324092813.index
 1760105969.index
-1800736843.index
+1942359185.index

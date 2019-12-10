@@ -25,7 +25,7 @@ public class MeanShift {
 		a1[i][col] = q;
 		
 		
-		System.out.println("COORD at row " + i + " is " + x + ", " +y);
+//		System.out.println("COORD at row " + i + " is " + x + ", " +y);
 	} // end Add function
 	
 	
@@ -63,7 +63,7 @@ public class MeanShift {
 	
 	public static void pickClusterForPoint(float arr[][], Vector v1, Vector v2, float problemPoints[][])
 	{
-		System.out.println(" -=-=-=-=-=- STARTING pickClusterForPoint =-=---==--==-=");
+//		System.out.println(" -=-=-=-=-=- STARTING pickClusterForPoint =-=---==--==-=");
 		float mainCluster = 0;
 		float comparisonCluster = 0;
 		int column = 2; //column number starts with 2 (index 0 and 1 are the X and Y of the problem point
@@ -71,7 +71,7 @@ public class MeanShift {
 		
 		for(int row = 0; row < problemPoints.length; row++) //go through each problem point in array
 		{
-			System.out.println(" ");
+//			System.out.println(" ");
 			float getPointsClusterX; //we need to find the problem points main cluster, it isnt stored in problemPoints
 			float getPointsClusterY;
 			column = 2;
@@ -93,7 +93,7 @@ public class MeanShift {
 					break; // we found that point's clusterNumber from arr, break out, we're done
 				}
 			}
-			System.out.println("New point in question is " + getPointsClusterX + " " + getPointsClusterY + " with cluster " + mainCluster);
+//			System.out.println("New point in question is " + getPointsClusterX + " " + getPointsClusterY + " with cluster " + mainCluster);
 			for(int i = 0; i < arr.length; i++)
 			{
 				if(arr[i][4] == mainCluster)
@@ -106,10 +106,10 @@ public class MeanShift {
 			{
 				v2.clear();
 				comparisonCluster = problemPoints[row][column]; 
-				System.out.println("In While Loop for point " + getPointsClusterX + " " + getPointsClusterY + " looking at cluster " + comparisonCluster);
+//				System.out.println("In While Loop for point " + getPointsClusterX + " " + getPointsClusterY + " looking at cluster " + comparisonCluster);
 				if(comparisonCluster == 0)
 				{
-					System.out.println("This cluster number is 0, break out");
+//					System.out.println("This cluster number is 0, break out");
 					column = 2;
 					break; //we're done with the funciton if the comparisonCluster is now 0
 							// in other words there is no more clusters to compare in that row (for that specific point)
@@ -127,12 +127,12 @@ public class MeanShift {
 				
 				if(v2.size() > v1.size()) //if the comparison cluster is larger, make the point's "main cluster" this one
 				{
-					System.out.println("Main cluster " + mainCluster + " is smaller than cluster " + comparisonCluster);
+//					System.out.println("Main cluster " + mainCluster + " is smaller than cluster " + comparisonCluster);
 					for(int i = 0; i < arr.length; i++) // going through arr looking for that point
 					{
 						if(arr[i][0] == getPointsClusterX && arr[i][1] == getPointsClusterY) //nice, we found the match
 						{
-							System.out.println("Cluster " + mainCluster + " is now becoming " + comparisonCluster);
+//							System.out.println("Cluster " + mainCluster + " is now becoming " + comparisonCluster);
 							arr[i][4] = comparisonCluster; // assigning that point's cluster to the comparison one
 							problemPoints[row][column] = -1; //that point no longer has a problem with that cluster, assigning -1 to the tag
 							column++; //go to the next cluster that point has a problem with, while loop continues
@@ -143,7 +143,7 @@ public class MeanShift {
 				}
 				else
 				{
-					System.out.println("Main cluster(" + v1.size() + ") is larger than comparison cluster(" + v2.size() + ") ");
+//					System.out.println("Main cluster(" + v1.size() + ") is larger than comparison cluster(" + v2.size() + ") ");
 					//The comparisonCluster didn't have more points, the point kept it's original cluster
 					problemPoints[row][column] = -1; //that point no longer has a problem with that cluster, assigning -1 to the tag
 					column++; //go to the next cluster that point has a problem with, while loop continues
@@ -177,19 +177,19 @@ public class MeanShift {
 			}
 		}
 		
-		System.out.println(" -=-= FOR Clusters " + cluster1 + " and " + cluster2 + "-=--=-");
-		System.out.println("Cluster" + cluster1 + " has " + pointCounter1 + " points. ");
-		System.out.println("Cluster" + cluster2 + " has " + pointCounter2 + " points. ");
+//		System.out.println(" -=-= FOR Clusters " + cluster1 + " and " + cluster2 + "-=--=-");
+//		System.out.println("Cluster" + cluster1 + " has " + pointCounter1 + " points. ");
+//		System.out.println("Cluster" + cluster2 + " has " + pointCounter2 + " points. ");
 		
 		if(pointCounter1 >= pointCounter2)
 		{
-			System.out.println("Cluster" + cluster2 + " is merging into Cluster " + cluster1);
+//			System.out.println("Cluster" + cluster2 + " is merging into Cluster " + cluster1);
 			winningCluster = cluster1;
 			losingCluster = cluster2;
 		}
 		else
 		{
-			System.out.println("Cluster" + cluster1 + " is merging into Cluster " + cluster2);
+//			System.out.println("Cluster" + cluster1 + " is merging into Cluster " + cluster2);
 			winningCluster = cluster2;
 			losingCluster = cluster1;
 		}
@@ -217,7 +217,7 @@ public class MeanShift {
 						{
 							if(problemPoints[row][col] == winningCluster)
 							{
-								System.out.println("Point " + problemPoints[row][0] + " " + problemPoints[row][1] + " no longer has a problem with cluster " + winningCluster);
+//								System.out.println("Point " + problemPoints[row][0] + " " + problemPoints[row][1] + " no longer has a problem with cluster " + winningCluster);
 								problemPoints[row][col] = -1;
 								break; // that problem point no longer has a problem with that cluster
 							}
@@ -230,10 +230,10 @@ public class MeanShift {
 					}
 				} // that cluster was taken off of the point in the "problem point" array
  				arr[i][4] = winningCluster;
-				System.out.println("Point " + arr[i][0] + " " + arr[i][1] + " was moved into cluster " + arr[i][4]);
+//				System.out.println("Point " + arr[i][0] + " " + arr[i][1] + " was moved into cluster " + arr[i][4]);
 			}
 		}
-		System.out.println(" ");
+//		System.out.println(" ");
 		
 		
 		
@@ -245,8 +245,8 @@ public class MeanShift {
 	public static void checkCentroidWindow(float centroids[][], float arr[][], float problemPoints[][], int windowSize)
 	{
 		//int windowSize = 15;
-		System.out.println("======= STARTING to check Centroids =======");
-		System.out.println(" ");
+//		System.out.println("======= STARTING to check Centroids =======");
+//		System.out.println(" ");
 		for(int i = 0; i < centroids.length; i++) // go through centroid list
 		{
 			if(centroids[i][0] != -1 && centroids[i][1] != -1 ) // if that row has a centroid point
@@ -271,8 +271,8 @@ public class MeanShift {
 								double distance = Eu(x, y, x2, y2);
 								if(distance <= windowSize)
 								{
-									System.out.print("===Clusters: " + (centroids[i][2]) + " and " + (centroids[j][2]) + "-> ");
-									System.out.println("Centroid point " + x + " " + y + " and " + x2 + " " + y2 + " are in each others scopes");
+//									System.out.print("===Clusters: " + (centroids[i][2]) + " and " + (centroids[j][2]) + "-> ");
+//									System.out.println("Centroid point " + x + " " + y + " and " + x2 + " " + y2 + " are in each others scopes");
 									//add something that puts all points of one cluster into another
 									mergeCluster(centroids[i][2], centroids[j][2], arr, problemPoints, centroids);
 								}
@@ -338,7 +338,7 @@ public class MeanShift {
 		int recallFunction = 0;			// number that is returned to clusterNumber in CETSP
 		recallFunction = clusterNumber;  //Gets reassigned later
 		
-		System.out.println(" ENTERED CLUSTER FUNCTION HERE!!!!!");
+//		System.out.println(" ENTERED CLUSTER FUNCTION HERE!!!!!");
 		
 			for(int row = 0; row < n; row++)
 			{
@@ -416,10 +416,10 @@ public class MeanShift {
 		}
 		
 		distanceMeanX = distanceTotalX/numberOfClusterPoints;   //Calculate all relevant points' x and y means
-		System.out.println(" Distance mean X was calculated from " + distanceTotalX + " divded by " + numberOfClusterPoints);
+//		System.out.println(" Distance mean X was calculated from " + distanceTotalX + " divded by " + numberOfClusterPoints);
 		
 		distanceMeanY = distanceTotalY/numberOfClusterPoints;
-		System.out.println(" Distance mean Y was calculated from " + distanceTotalY + " divded by " + numberOfClusterPoints);
+//		System.out.println(" Distance mean Y was calculated from " + distanceTotalY + " divded by " + numberOfClusterPoints);
 		
 		
 		
@@ -439,9 +439,9 @@ public class MeanShift {
 		
 		if(changeCentroid == true)  // if X or Y changed, centroid needs to be recalculated
 		{
-			System.out.println("CENTROID IS NOW " + newX + " and " + newY);
-			System.out.println("CLUSTER IS SHIFTING to NEW CENTROID !!!!!!!!!!");
-			System.out.println(" ");
+//			System.out.println("CENTROID IS NOW " + newX + " and " + newY);
+//			System.out.println("CLUSTER IS SHIFTING to NEW CENTROID !!!!!!!!!!");
+//			System.out.println(" ");
 			
 			changeCentroid = false;
 			Cluster(newX, newY, arr, n, cluster, clusterNumber, centroids, stop, fixClusters1, fixClusters2, problemPoints, windowSize, Q);   //calls the same function with new x and y centroid
@@ -449,7 +449,7 @@ public class MeanShift {
 		}
 		else	//If the centroid isn't being changed, do this else statement
 		{
-			System.out.println("X and Y DIDNT CHANGE!! WE CAN MAKE A NEW CLUSTER!!!");			
+//			System.out.println("X and Y DIDNT CHANGE!! WE CAN MAKE A NEW CLUSTER!!!");			
 			
 			for(int k = 0; k < n; k++)
 			{
@@ -458,14 +458,14 @@ public class MeanShift {
 					centroids[k][0] = x;
 					centroids[k][1] = y;
 					centroids[k][2] = clusterNumber;
-					System.out.println("Added point " + x + " " + y + " at row " + k);
+//					System.out.println("Added point " + x + " " + y + " at row " + k);
 					break;
 				}
 				else if(centroids[k][0] != 0 && centroids[k][1] != 0 && k == n) // this "else if" is just a "making sure it works correctly" check
 				{
-					System.out.println("There is no more room for new centroids!!"); // this SHOULDNT be possible
-					System.out.println("We can't add points " + x + " " + y);		//this array size is the same as number of points
-					System.out.println(" ");
+//					System.out.println("There is no more room for new centroids!!"); // this SHOULDNT be possible
+//					System.out.println("We can't add points " + x + " " + y);		//this array size is the same as number of points
+//					System.out.println(" ");
 				}
 			}
 		
@@ -474,7 +474,7 @@ public class MeanShift {
 				
 				if(arr[row][3] == 1 && row == (n-1)) // if there isn't another unClustered point
 				{
-					System.out.println("No points remain!! All have been clustered!!");
+//					System.out.println("No points remain!! All have been clustered!!");
 					//System.out.println("REASSIGNING clsuterNumber to -99!");
 					//clusterNumber = -99;
 					//System.out.println("REASSIGNING clsuterNumber to -99!  "  + clusterNumber);
@@ -496,9 +496,9 @@ public class MeanShift {
 					// -=-=-=-==--===-=--=-=-=
 					
 					
-					System.out.println("The new X is " + nextClusterX + " and the new Y is " + nextClusterY + " for the new cluster. ");
-					System.out.println("");
-					System.out.println("");
+//					System.out.println("The new X is " + nextClusterX + " and the new Y is " + nextClusterY + " for the new cluster. ");
+//					System.out.println("");
+//					System.out.println("");
 					
 					cluster[0][0] = nextClusterX;    //assigns next X and Y to cluster
 					cluster[0][1] = nextClusterY;   // mainly did this because i can't return multiple values(new x, new y, and cluster number)
@@ -509,8 +509,8 @@ public class MeanShift {
 					}
 					
 					int test = clusterNumber + 1;
-					System.out.println("The Clusternumber is " + clusterNumber + " Moving onto cluster " + test);
-					System.out.println(" ");
+//					System.out.println("The Clusternumber is " + clusterNumber + " Moving onto cluster " + test);
+//					System.out.println(" ");
 					
 					break;    //A new cluster point has been found, break out of for loop, then return value at bottom
 					
@@ -565,8 +565,8 @@ public class MeanShift {
 	
 	public static void ProbPointPrint(float problemPoints[][])
 	{
-		System.out.println("======= PRINTING Problem points and cluster numbers =======");
-		System.out.println(" ");
+//		System.out.println("======= PRINTING Problem points and cluster numbers =======");
+//		System.out.println(" ");
 		
 		for(int i = 0; i < problemPoints.length; i++)
 		{
@@ -574,13 +574,13 @@ public class MeanShift {
 			{
 				float x = problemPoints[i][0];
 				float y = problemPoints[i][1];
-				System.out.print(i + ": Point " + x + " " + y + " conflicts with cluster: " );
+//				System.out.print(i + ": Point " + x + " " + y + " conflicts with cluster: " );
 				
 				for(int j = 2; j < problemPoints.length; j++) //until cluster == 0, keep printing clusters, there will never be a cluster 0
 				{ //cluster == 0 indicates there's no more conflicting clusters the rest of the way
 					if(problemPoints[i][j] != 0) // if the cluster is anything but 0, print it
 					{
-						System.out.print(problemPoints[i][j] + " ");
+//						System.out.print(problemPoints[i][j] + " ");
 					}
 					else // if that column is 0, there's no more clusters left to print
 					{
@@ -588,7 +588,7 @@ public class MeanShift {
 					}
 				}
 				
-				System.out.println(" ");
+//				System.out.println(" ");
 			}
 			else // no more "problem points left"
 			{
@@ -599,8 +599,8 @@ public class MeanShift {
 	
 	public static void PrintUnClusteredPoints(float arr[][], int n)
 	{
-		System.out.println("======= PRINTING unClustered Points =======");
-		System.out.println(" ");
+//		System.out.println("======= PRINTING unClustered Points =======");
+//		System.out.println(" ");
 		for(int row = 0; row < n; row++)
 		{
 			if(arr[row][3] == 0)
@@ -608,7 +608,7 @@ public class MeanShift {
 				float x = arr[row][0];
 				float y = arr[row][1];
 				
-				System.out.println("Row: " + row + " is " + x + " " + y);
+//				System.out.println("Row: " + row + " is " + x + " " + y);
 			}
 		}
 	} // end printUnClusteredPoints function
@@ -616,7 +616,7 @@ public class MeanShift {
 	public static void CentroidPrint(float centroid[][], int n)
 	{
 		System.out.println("======= PRINTING Centroids =======");
-		System.out.println("            X   Y   Centroid Number   Weight");
+		System.out.println("            X           Y      Centroid Number");
 		System.out.println(" ");
 		
 		for(int row = 0; row < centroid.length; row++)
@@ -626,7 +626,7 @@ public class MeanShift {
 				float x = centroid[row][0];
 				float y = centroid[row][1];
 				
-				System.out.println("Row: " + row + " is " + x + "  " + y  + "  " + centroid[row][2] + "  " + centroid[row][3]);
+				System.out.println("Row: " + row + " is " + x + "  " + y  + "  " + centroid[row][2]);
 			}
 		}
 		
@@ -671,20 +671,20 @@ public class MeanShift {
 	public static void Print(float a1[][], int windowSize)  //n number of customers  Prints main array -> a1
 	{
 		
-		System.out.println(" -=-=-=--= PRINTING ARRAY -=-=-=-=-=-=");
-		System.out.println("        X   Y   Cluster Number   Point Weight");
+//		System.out.println(" -=-=-=--= PRINTING ARRAY -=-=-=-=-=-=");
+//		System.out.println("        X   Y   Cluster Number   Point Weight");
 		
 		for(int i = 0; i < a1.length; i++)
 		{
-			System.out.print("Row " + i + " ");
+//			System.out.print("Row " + i + " ");
 			for(int j = 0; j < 2; j++)
 			{
 				System.out.print(a1[i][j] + " ");
 			}
-			System.out.print(a1[i][4] + " " + a1[i][5]);
-			System.out.println("");
+//			System.out.print(a1[i][4] + " " + a1[i][5]);
+//			System.out.println("");
 		}
-		System.out.println(" -=-=-=--= DONE -=-=-=-=-=-=");	
+//		System.out.println(" -=-=-=--= DONE -=-=-=-=-=-=");	
 	} // end Print function
 
 

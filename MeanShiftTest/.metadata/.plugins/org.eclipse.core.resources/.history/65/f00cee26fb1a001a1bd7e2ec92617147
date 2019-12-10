@@ -20,7 +20,6 @@ public class MainClass {
 		// MeanShift calls start ===============================================================================================================================
 		Scanner reader = new Scanner(System.in); // Reading from System.in
 		int n = 0;
-		String filepath = "";
 		
 		System.out.println("Type 1 for cluster A1 with 3000 points.");
 		System.out.println("Type 2 for cluster S1 with 5000 points.");
@@ -34,12 +33,10 @@ public class MainClass {
 		}
 		if(pickCluster == 1)
 		{
-			filepath = "Data/A1Data.xlsx";
 			n = 3000;
 		}
 		else if(pickCluster == 2)
 		{
-			filepath = "Data/S1Data.xlsx";
 			n = 5000;
 		}
 		
@@ -66,7 +63,7 @@ public class MainClass {
 		*/
 				//float[][]a1 = new float[n][5];
 		
-			
+			String filepath = "Data/A1Data.xlsx";
 				Plot.readExcel(filepath, a1);
 				
 				float[][]newClusterXY = new float[1][2];
@@ -102,7 +99,7 @@ public class MainClass {
 				myY = a1[0][1];
 				System.out.println(" ");
 				
-				float newX = 0; // initialize varia7bles being used in forloop below
+				float newX = 0; // initialize variables being used in forloop below
 				float newY = 0;
 				
 				newClusterXY[0][0] = myX; //set the first x and y the cluster method will use
@@ -118,8 +115,8 @@ public class MainClass {
 				
 				System.out.println("Input the size of the cluster's window(int) below.");
 				System.out.println("Recommended size is between 5-20");
-				System.out.println("Cluster with 3000 points: 6 will give ~20 clusters(accurate to dataset)");
-				System.out.println("Cluster with 5000 points: 13 will give ~15 clusters(accurate to dataset)");
+				System.out.println("Cluster with 3000 points: 6 will give 20 clusters");
+				System.out.println("Cluster for 3000 points: 6 will give 20 clusters");
 				
 				
 				
@@ -132,20 +129,20 @@ public class MainClass {
 					//int windowSize = 10;	//sets window size of cluster
 					for(clusterNumber = 1; clusterNumber > 0; clusterNumber++) //forloop to create each cluster
 					{
-		//				System.out.println("NEW CLUSTER. NUMBER: " + clusterNumber);
+						System.out.println("NEW CLUSTER. NUMBER: " + clusterNumber);
 						newX = newClusterXY[0][0]; //sets the new x and y to be passed as a parameter to the function
 						newY = newClusterXY[0][1];
 						
-		//				System.out.println(" ");
-		//				System.out.println("Making cluster # " + clusterNumber + " with " + newX + " " + newY);
-		//				System.out.println(" ");
+						System.out.println(" ");
+						System.out.println("Making cluster # " + clusterNumber + " with " + newX + " " + newY);
+						System.out.println(" ");
 					
 						MeanShift.Cluster(newX, newY, a1, n, newClusterXY, clusterNumber, centroids, stop, fixClusters1, fixClusters2, problemPoints, windowSize, Q);
 						
 						
 						if(stop[0] == 1) // if the clusterNumber above gets assigned a negative (clusters are done being made)
 						{
-		//					MeanShift.CentroidPrint(centroids, n);
+							MeanShift.CentroidPrint(centroids, n);
 							break; // break out of the for loop
 							// This should also STOP clustering at this point, centroid and any unClusteredPoints are printed
 						}		
@@ -158,8 +155,8 @@ public class MainClass {
 				
 				MeanShift.ProbPointPrint(problemPoints); //print problem points with clusters they have problems with
 				MeanShift.checkCentroidWindow(centroids, a1, problemPoints, windowSize); //check centroids / merge centroids
-		//		MeanShift.ProbPointPrint(problemPoints); //print problem points again, see if anything changed
-		//		MeanShift.CentroidPrint(centroids, n); //print centroids after merge
+				MeanShift.ProbPointPrint(problemPoints); //print problem points again, see if anything changed
+				MeanShift.CentroidPrint(centroids, n); //print centroids after merge
 				
 				numofClusters = MeanShift.CentroidCount(centroids); //figure out centroid count
 				
@@ -175,12 +172,12 @@ public class MainClass {
 				
 				
 				MeanShift.pickClusterForPoint(a1, v1, v2, problemPoints); // assign a cluster for those problem points
-		//		MeanShift.ProbPointPrint(problemPoints); // print problem points, confirming all have been solved (columns replaced with -1 when solved)
+				MeanShift.ProbPointPrint(problemPoints); // print problem points, confirming all have been solved (columns replaced with -1 when solved)
 				//MeanShift.updateWeights(centroids, a1);
 				MeanShift.FinalCentroids(centroids, finalCentroids); //obtain final centroids/neighborhoods
-		//		MeanShift.CentroidPrint(finalCentroids, n); //print final centroids
+				MeanShift.CentroidPrint(finalCentroids, n); //print final centroids
 				//MeanShift.FindEdges(a1,finalCentroids, edgeArray, edgePoints, numofClusters);
-		//		MeanShift.Print(a1, windowSize); //re-print a1 array with individual points, showing updated/final neighborhoods numbers
+				MeanShift.Print(a1, windowSize); //re-print a1 array with individual points, showing updated/final neighborhoods numbers
 				
 				System.out.println(" ");
 				System.out.println(" ");
@@ -204,7 +201,7 @@ public class MainClass {
 					}
 				}
 			//	MeanShift.Print(a1, windowSize);
-				MeanShift.CentroidPrint(finalCentroids, n);
+			//	MeanShift.CentroidPrint(finalCentroids, n);
 				
 				Plot.getArray(a1, finalCentroids);
 				Application.launch(Plot.class, args);
@@ -216,7 +213,7 @@ public class MainClass {
 
 	}
 	
-	public static long getStartTime()
+	public long getStartTime()
 	{
 		return startTime;
 	}
