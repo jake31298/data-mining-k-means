@@ -84,7 +84,7 @@ public class Plot extends Application{
 				
 				//MeanShift.Add(i, x, y, q, a1); //Adding each point into a1
 				
-				MeanShift.Add(i, x, y, 0, a1);
+				MeanShift.Add(k, x, y, 0, a1);
 				
 				
 			}
@@ -104,11 +104,14 @@ public class Plot extends Application{
 			arrList.get(i).add(0, arr[i][0]);
 			arrList.get(i).add(1, arr[i][1]);
 			arrList.get(i).add(2, arr[i][4]);
+			System.out.println("row " + i + " has a cluster number of " + arrList.get(i).get(2));
 		}
 		
 		for(int i = 0; i < centroids.length; i++)
 		{
+			
 			centList.add(new ArrayList<Float>());
+			System.out.println("centList now has a size of" + centList.size());
 			centList.get(i).add(0, centroids[i][2]);
 			System.out.println("Centroid number " + i + " has a number of " + centroids[i][2]);
 		}
@@ -192,6 +195,7 @@ public class Plot extends Application{
         for(int i = 0; i < arrList.size(); i++)
         {
         	clusterNum = arrList.get(i).get(2);
+        	System.out.println("The cluster list only has " + vecClusters.size() + " elements");
         	System.out.println("[index: " + i + "] clusterNum is " + clusterNum);
         	vecClusters.get((int)clusterNum-1).getData().add(new XYChart.Data(arrList.get(i).get(0), arrList.get(i).get(1)));
         }

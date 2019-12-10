@@ -38,7 +38,8 @@ public class MainClass {
 		}
 		*/
 				//float[][]a1 = new float[n][5];
-			String filepath = "/Data/A1Data.xlsx";
+		
+			String filepath = "Data/A1Data.xlsx";
 				Plot.readExcel(filepath, a1);
 				
 				float[][]newClusterXY = new float[1][2];
@@ -175,7 +176,7 @@ public class MainClass {
 				
 				Plot.getArray(a1, finalCentroids);
 				Application.launch(Plot.class, args);
-				//MeanShift.Print(a1, windowSize);
+		//		MeanShift.Print(a1, windowSize);
 				
 				
 					 
